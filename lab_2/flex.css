@@ -39,19 +39,20 @@ header, footer {
 }
 
 #smallDiv {
-    display:  flex;
-    flex-direction: column;
     flex: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
 }
 
 aside, nav {
     background-color:dimgray;
     padding: 2%;
-    flex: 1;
 }
 
 aside {
     text-align: right;
+    flex: 1;
 }
 
 nav {
@@ -89,7 +90,6 @@ section {
 
 footer {
     font-size: 15px;
-    flex: 1;
 }
 
 @media (max-width: 600px) {
