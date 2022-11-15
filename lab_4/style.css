@@ -1,0 +1,177 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+
+    background-color: #E1B7BF;
+    background-image: linear-gradient(to right, #59437A, #59437A );
+    background-size: 100% 250px;
+    background-position: 100% 380px;
+    background-repeat: no-repeat;
+    
+    padding: 0 2% 7% 0;
+}
+
+header {
+    display: flex;
+    width: 70%;
+    height: 2.5%;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.logo {
+    height: 100%;
+}
+
+.menu-svg {
+    height: 80%;
+    align-self: center;
+    fill: #C262AF;
+}
+
+.menu-svg:hover {
+    height: 100%;
+}
+
+.menu-svg:active {
+    height: 80%;
+}
+
+.main H1 {
+    color: #C262AF;
+    font-size: 48px;
+    word-break: break-word;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    max-width: 900px;
+    height: 80%;
+    margin: 2%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+    padding: 3%;
+    margin: 1%;
+    text-align: center;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px grey;
+}
+
+.left {
+    align-self: start;
+}
+
+.center {
+    align-self: center;
+}
+
+.right {
+    align-self: end;
+}
+
+.box img {
+    max-width: 100%;
+}
+
+.item H3 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 5%;
+}
+
+.item p {
+    font-size: 13px;
+}
+
+.item .button {
+    color: #C262B1;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5% 5% 20% 5%;
+}
+
+.item .button:hover {
+    color: #59437A;
+    text-decoration: underline;
+}
+
+.item .button:active {
+    color: black;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    background-color:#333333;
+    color: white;
+    margin: 0;
+    height: 10%;
+    justify-content: center;
+}
+
+footer p {
+    width: 25%;
+    margin: 50px auto 50px;
+    align-self: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    body {
+        height: auto;
+    }
+    .box {
+        flex-direction: column;
+        height: 100%;
+    }
+    .item {
+        align-self: center;
+        width: 70%;
+        min-height: 450px;
+    }
+    .main H1 {
+        font-size: 7vw;
+        margin: 80px 0 40px;
+        width: 70%;
+    }
+    header {
+        height: 50px;
+    }
+    .menu-svg {
+        height: 55%;
+    }
+    
+    .menu-svg:hover {
+        height: 100%;
+    }
+    
+    .menu-svg:active {
+        height: 55%;
+    }
+    footer p {
+        width: 70%;
+    }
+}
